@@ -1,0 +1,378 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  background-color: #f3f5f7;
+  color: #222222;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #142b4a;
+  color: white;
+  text-align: center;
+  padding: 72px 20px;
+}
+
+.brand {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #c8d8ee;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.3;
+  margin: 20px 0;
+}
+
+header p {
+  font-size: 17px;
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid #e5eaf0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(20, 43, 74, 0.1);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #142b4a;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #596579;
+}
+
+.contact {
+  background-color: white;
+  text-align: center;
+  padding: 36px 20px;
+  border-radius: 14px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2457a7;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.button:hover {
+  background-color: #183f7b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 52px 18px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* 導覽列 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 5%;
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #142b4a;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #142b4a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #3975c6;
+}
+
+/* 首頁主視覺 */
+.hero {
+  background: linear-gradient(135deg, #142b4a, #28517e);
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 24px;
+}
+
+.hero .eyebrow {
+  color: #b9d3f5;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 0 auto 28px;
+  color: #e1e9f4;
+}
+
+.hero .button {
+  background-color: #ffffff;
+  color: #142b4a;
+}
+
+.hero .button:hover {
+  background-color: #e8eff8;
+}
+
+/* 手機版導覽列 */
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 56px 20px;
+  }
+}
+
+/* 第 7 課：作品展示區 */
+.works-section {
+  padding: 32px 0;
+}
+
+.works-intro {
+  color: #64748b;
+  margin-top: -12px;
+  margin-bottom: 28px;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.work-item {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5eaf0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(20, 43, 74, 0.12);
+}
+
+.work-image {
+  min-height: 220px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.work-image span {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.work-image strong {
+  font-size: 28px;
+}
+
+.business-card {
+  background: linear-gradient(135deg, #142b4a, #52749a);
+}
+
+.poster {
+  background: linear-gradient(135deg, #b85c38, #e5a16e);
+}
+
+.sticker {
+  background: linear-gradient(135deg, #38766d, #8cb9a1);
+}
+
+.work-info {
+  padding: 18px 20px 20px;
+}
+
+.work-info h3 {
+  color: #142b4a;
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.work-info p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* 手機與平板的作品排版 */
+@media (max-width: 800px) {
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-image {
+    min-height: 180px;
+  }
+}
+
+/* 第 8 課：印刷詢價表單 */
+.contact {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 24px;
+  border-radius: 14px;
+}
+
+.contact-intro {
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.quote-form {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #142b4a;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5dce6;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #222222;
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #9bbce8;
+  border-color: #3975c6;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2457a7;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #183f7b;
+}
