@@ -376,3 +376,32 @@ footer {
 .submit-button:hover {
   background-color: #183f7b;
 }
+
+/* 第 13 課：LINE 詢價按鈕 */
+.line-contact {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e5eaf0;
+  text-align: center;
+}
+
+.line-contact p {
+  color: #596579;
+  margin-bottom: 14px;
+}
+
+.line-button {
+  display: inline-block;
+  background-color: #06c755;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.line-button:hover {
+  background-color: #05a647;
+  transform: translateY(-2px);
+}
